@@ -1,0 +1,2 @@
+size of ALMI vocab:656341
+size of ALMI pair:2635

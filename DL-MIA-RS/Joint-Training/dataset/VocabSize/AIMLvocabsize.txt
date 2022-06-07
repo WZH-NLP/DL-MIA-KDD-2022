@@ -1,0 +1,2 @@
+size of AIML vocab:656324
+size of AIML pair:2635

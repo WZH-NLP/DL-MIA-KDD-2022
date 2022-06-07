@@ -1,0 +1,2 @@
+size of MIAL vocab:656341
+size of MIAL pair:3938

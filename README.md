@@ -36,7 +36,7 @@ The following commands can be used to train DL-MIA for sequential recommenders:
 cd DL-MIA/DL-MIA-SR/Joint-Training/SMDD/
 sh ACMC.sh
 ```
-Note that [slurm](https://slurm.schedmd.com/documentation.html) configuration commands in ```ACMC.sh``` should be commented out, if there is no slurm manager on your server.
+Note that [slurm](https://slurm.schedmd.com/documentation.html) configuration commands in ```ACMC.sh``` should be commented out if there is no slurm manager on your server.
 
 ## Evaluation
 

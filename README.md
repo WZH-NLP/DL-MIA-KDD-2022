@@ -8,7 +8,9 @@ State-of-the-art membership inference attacks against recommender systems face t
 
 In this paper, the proposed **DL-MIA** framework aims to address above limitations. To mitigate the gap between recommenders, a VAE based `disentangled encoder` is devised to identify recommender invariant and specific features. To reduce the estimation bias, we design a `weight estimator`, assigning a truth-level score for each difference vector to indicate estimation accuracy. 
 
-![framework](figures/framework.png)
+<div align=center>
+<img src="figures/framework.png" width="90%" height="90%">
+</div>
 
 ## Main results
 We evaluate DL-MIA against both general recommenders and sequential recommenders on three real-world datasets (i.e., `MovieLens-1M`, `Amazon Digital Music`, and `Amazon Beauty`). 
@@ -26,7 +28,7 @@ We evaluate DL-MIA against both general recommenders and sequential recommenders
 
 ## Dataset
 
-Check [DATASET.md](DATASET.md) for instructions of dataset preprocessing.
+For dataset preprocessing, please see detailed instructions in [DATASET.md](DATASET.md).
 
 ## Run
 The following command can be used to train your own DL-MIA-SR model:
@@ -34,12 +36,11 @@ The following command can be used to train your own DL-MIA-SR model:
 cd DL-MIA/DL-MIA-SR/Joint-Training/SMDD/
 sh ACMC.sh
 ```
-Note that there are slurm configuration commands in ```ACMC.sh```, if it is not necessary for you, you need to comment out the relevant commands.
-<!-- ``run_vgvae.sh`` is provided as an example for training new models -->
+Note that [slurm](https://slurm.schedmd.com/documentation.html) configuration commands in ```ACMC.sh``` should be commented out, if there is no slurm service on your server.
 
 ## Evaluation
 
-When you want to evaluate the trained model, just set the ```--is_eval``` in ```ACMC.sh``` to ```1```
+To evaluate the trained model, please set the ```--is_eval``` in ```ACMC.sh``` to ```1```
 
 
 ## Reference

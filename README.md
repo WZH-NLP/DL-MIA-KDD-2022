@@ -21,21 +21,25 @@ We evaluate DL-MIA against both general recommenders and sequential recommenders
 ## Dependencies
 
 - Python 3.8
-- PyTorch 1.3
+- PyTorch 1.7
 - NumPy
 
 ## Dataset
 
-
+Check [DATASET.md](DATASET.md) for instructions of dataset preprocessing.
 
 ## Run
-
+The following command can be used to train your own DL-MIA-SR model:
+```bash
+cd DL-MIA/DL-MIA-SR/Joint-Training/SMDD/
+sh ACMC.sh
+```
+Note that there are slurm configuration commands in ```ACMC.sh```, if it is not necessary for you, you need to comment out the relevant commands.
 <!-- ``run_vgvae.sh`` is provided as an example for training new models -->
 
 ## Evaluation
 
-<!-- #### Labeled F1 and Tagging accuracy
-``python eval_f1_acc.py -s PATH_TO_MODEL_PICKLE -v VOCAB_PICKLE -d SYNTACTIC_EVAL_DIR`` -->
+When you want to evaluate the trained model, just set the ```--is_eval``` in ```ACMC.sh``` to ```1```
 
 
 ## Reference

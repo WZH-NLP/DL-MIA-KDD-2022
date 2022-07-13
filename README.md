@@ -26,11 +26,11 @@ We evaluate DL-MIA against both general recommenders and sequential recommenders
 - PyTorch 1.7
 - NumPy
 
-## Dataset
+## Datasets
 
 For dataset preprocessing, please see detailed instructions in [DATASET.md](DATASET.md).
 
-## Run
+## Get started
 The following commands can be used to train DL-MIA for sequential recommenders:
 ```bash
 cd DL-MIA/DL-MIA-SR/Joint-Training/SMDD/
@@ -38,7 +38,7 @@ sh ACMC.sh
 ```
 Note that [slurm](https://slurm.schedmd.com/documentation.html) configuration commands in ```ACMC.sh``` should be commented out if there is no slurm manager on your server.
 
-## Evaluation
+## Evaluations
 
 To evaluate trained models, please set ```--is_eval``` in ```ACMC.sh``` to ```1```
 

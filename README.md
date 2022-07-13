@@ -31,16 +31,16 @@ We evaluate DL-MIA against both general recommenders and sequential recommenders
 For dataset preprocessing, please see detailed instructions in [DATASET.md](DATASET.md).
 
 ## Run
-The following command can be used to train your own DL-MIA-SR model:
+The following commands can be used to train DL-MIA for sequential recommenders:
 ```bash
 cd DL-MIA/DL-MIA-SR/Joint-Training/SMDD/
 sh ACMC.sh
 ```
-Note that [slurm](https://slurm.schedmd.com/documentation.html) configuration commands in ```ACMC.sh``` should be commented out, if there is no slurm service on your server.
+Note that [slurm](https://slurm.schedmd.com/documentation.html) configuration commands in ```ACMC.sh``` should be commented out, if there is no slurm manager on your server.
 
 ## Evaluation
 
-To evaluate the trained model, please set the ```--is_eval``` in ```ACMC.sh``` to ```1```
+To evaluate trained models, please set ```--is_eval``` in ```ACMC.sh``` to ```1```
 
 
 ## Reference
